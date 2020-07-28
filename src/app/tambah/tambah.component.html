@@ -1,0 +1,19 @@
+<h3 mat-dialog-title>Tambahkan Daftar </h3>
+<div mat-dialog-content>
+  <mat-form-field style="width: 100%;">
+    <mat-label>Nama Pengunjung</mat-label>
+    <input matInput [(ngModel)]="data.judul_film">
+  </mat-form-field>
+
+  <mat-form-field style="width: 100%;">
+    <mat-label>Tanggal Kunjungan</mat-label>
+    <input matInput [(ngModel)]="data.genre">
+  </mat-form-field>
+
+
+</div>
+<mat-dialog-actions>
+  <span class="spacer"></span>
+  <button mat-button mat-dialog-close>Batal</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="simpan(data)">Simpan</button>
+</mat-dialog-actions>
